@@ -16,10 +16,12 @@ p:first-letter{
   font-size: 200%;
 }
 p{
-  margin-left: 200px;
-  text-indent: 3em;
+  width: 800;
+  margin-left: 50px;
+  text-indent: 1em;
   text-align: left;
   background: silver;
+  line-height: 1;
 }
 p + p{
   font-size: 36pt;
@@ -40,6 +42,7 @@ body div ul *:hover{
   background: gold;
   font-size: 40px;
 }
+
 li:first-child {
     background: maroon;
   }
@@ -56,10 +59,7 @@ li:first-child {
     ol + p +  ul li {
     background: gray;
   }
-p {
-  width: 450px;
-  color:pink;
-}
+ 
 em{
   color:gold;
 }
@@ -81,6 +81,29 @@ img{
 div #nextDiv {
   position: relative;
   background-color: silver;
+}
+#verticalAlign p{
+  font-size: 46px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+p img{
+  height: 100px;
+  width: auto;
+  vertical-align: bottom;
+  line-height: 1em;
+}
+
+p img + img{
+   vertical-align: sub;
+}
+
+p img + img + img{
+   vertical-align: top;
+}
+
+p img + img + img +img{
+   vertical-align: -150%;
 }
 </style>
 </head>
@@ -116,7 +139,9 @@ div #nextDiv {
 <li>3</li>
 <li>4</li>
 </ol>
-
+<div id = "verticalAlign">
+    <p>let<img  src = "../pic/portrait3.jpg"></img> me<img  src = "../pic/portrait2.jpg"></img>test<img  src = "../pic/portrait4.jpg"></img> the <img  src = "../pic/portrait1.jpg"></img>vertical-align<p>
+</div>
 </body>
 
 <script>
