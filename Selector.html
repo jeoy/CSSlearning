@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<style type="text/css">
+/* 
+body  *:hover{
+  background: black;
+ 
+}*/
+body :after{
+    content: "}}";
+    color:silver;
+}
+p:first-letter{
+  color:green;
+  font-size: 200%;
+}
+
+body p:first-letter{
+   color:red;
+  font-size: 200%;
+} 
+
+body div ul *:hover{
+  background: gold;
+  font-size: 40px;
+}
+li:first-child {
+    background: purple;
+  }
+  ol + p +  ul + p{
+    background: gold;
+  }
+    ol  {
+    background: yellow;
+  }
+
+    ol + p +  ul  {
+    background: silver;
+  }
+    ol + p +  ul li {
+    background: gray;
+  }
+p {
+  color:pink;
+}
+em{
+  color:gold;
+}
+img{
+  width: 840px;
+}
+#imageboard{
+  position: relative;
+  top:100px;
+  background: red;
+  width: 830px;
+  height: 400px;
+  overflow: hidden;
+}
+#img1,#img2{
+  position: absolute;
+  
+}
+</style>
+</head>
+<body>
+
+<div>
+
+<ol>
+<li> Illidari </li>
+<li> Is </li>
+<li> Unstoppable! </li>
+</ol>
+<p>you are <em>not</em> prepared</p>
+<ul>
+<li> The Eternal </li>
+<li> Sun </li>
+<li> Guide Us! </li>
+</ul>
+<p>Ash to Ash</p>
+
+<div id = "imageboard">
+<img id = "img2"; src = "../pic/IllidariBEG.jpg"></img>
+  <img id = "img1"; src = "../pic/ILLIDARI.jpg"></img>
+<ol>
+<li>1</li>
+<li>2</li>
+<li>3</li>
+<li>4</li>
+</ol>
+</div>
+</body>
+
+<script>
+var GlobalTimer ={
+  t1 : '',
+  t2 : ''
+
+}
+ 
+function fadeOut(element){
+  if (!element.style.opacity){
+     element.style.opacity = 1;
+  }
+  
+    clearInterval(GlobalTimer.t2);
+  if (element.style.opacity <= 0)
+    return 0;
+  else {
+    element.style.opacity = element.style.opacity - 0.05  ;
+   GlobalTimer.t1 = setTimeout(function(){
+      return fadeOut(element)},50);
+    return 0;
+  }
+
+}
+
+function fadeIn(element){
+  if (!element.style.opacity){
+     element.style.opacity = 1;
+  }
+  var a 
+   clearInterval(GlobalTimer.t1);
+  if (element.style.opacity >= 1)
+    return 0;
+  else {
+    element.style.opacity = parseFloat(element.style.opacity) + 0.05  ;
+    
+   GlobalTimer.t2 = setTimeout(function(){
+      return fadeIn(element)},50);
+    return 0;
+  }
+
+}
+
+div0 = document.createElement("div");
+ 
+img1 = document.getElementById("img1");
+img1.onmouseover = function(){
+   fadeOut(this);
+}
+
+img1.onmouseout= function(){
+   fadeIn(this);
+}
+
+ 
+div0.innerText =  "Array.matrix(5,4,0)"
+
+ 
+
+
+ 
+document.body.appendChild(div0);
+</script>
