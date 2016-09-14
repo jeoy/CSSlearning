@@ -2,7 +2,34 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <style type="text/css">
-p {
+body div *:hover{
+  background: gold;
+  font-size: 20px;
+}
+
+body div ol *:hover{
+  background: gold;
+  font-size: 40px;
+}
+body :after{
+    content: "}}";
+    color:silver;
+}
+p:first-letter{
+  color:green;
+  font-size: 200%;
+}
+
+body p:first-letter{
+   color:red;
+  font-size: 200%;
+} 
+
+body div ul *:hover{
+  background: gold;
+  font-size: 40px;
+}
+li:first-child {
     background: purple;
   }
   ol + p +  ul + p{
@@ -18,18 +45,23 @@ p {
     ol + p +  ul li {
     background: gray;
   }
-
+p {
+  color:pink;
+}
+em{
+  color:gold;
+}
 </style>
 </head>
 <body>
- 
+
 <div>
 <ol>
 <li> Illidari </li>
 <li> Is </li>
 <li> Invincible! </li>
 </ol>
-<p>you are not prepared</p>
+<p>you are <em>not</em> prepared</p>
 <ul>
 <li> The Eternal </li>
 <li> Sun </li>
