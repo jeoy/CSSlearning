@@ -7,7 +7,21 @@ body  *:hover{
   background: black;
  
 }*/
- 
+body{
+  margin:0px;
+}
+#topBar{
+  height: 200px;
+  overflow: hidden;
+  position: fixed;
+  z-index: 100000;
+  margin: 0px;
+  }
+#topBar img{
+  margin: 0px;
+  width: 100%;
+  
+}
 p:first-letter{
   color:green;
   font-size: 200%;
@@ -328,13 +342,30 @@ a{
   text-decoration: line-through;
   background-color: transparent;
 }
+
+table{
+  margin:2em;
+  width: 800px;
+  font-size: 2em;
+  color: white;
+  border-collapse: separate;
+  background-image: url("../pic/DHBEG.jpg");
+  background-size: 900px;
+  border-spacing: 2px;
+}
+td {
+  padding: 2px;
+  empty-cells: hide;
+  border:  3px double;
+  /*background: red;*/
+}
 </style>
 </head>
 <body>
 
-<div id = "topMenu">
- <img src="../pic/DHBattle.jpg"></div>
-</div>
+<!-- <div id = "topBar">
+ <img src="../pic/topbar.jpg"></div>
+</div> -->
 <ol>
 <li> Illidari </li>
 <li> Is </li>
@@ -412,6 +443,41 @@ Metamorphosis Icon Metamorphosis is a strong burst cooldown that augments your F
   <div id ="barD"></div>
   <div id ="barD"></div>
 </div>
+</div>
+
+<div id = "Atable">
+   <table >
+     <tr>
+  
+      <td> Species </td>
+      <td> BloodElf </td>
+      <td> Human </td>
+      <td> NightElf </td>
+     </tr>
+     <tr>
+      <td> Paladin </td>
+      <td> Yes</td>
+      <td> Yes</td>
+      <td> No</td>
+     </tr>
+     <tr>
+      <td> Prist </td>
+      <td> Yes</td>
+      <td> Yes</td>
+      <td> No </td>
+     </tr>
+     <tr>
+      <td> Druid </td>
+      <td> No</td>
+      <td> No</td>
+      <td> Yes</td>
+
+     </tr>
+     <tr>
+       <td>Prist</td>
+       <td></td>
+     </tr>
+   </table>
 </div>
 </body>
 
