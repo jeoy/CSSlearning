@@ -25,11 +25,13 @@ p{
 p + p{
   /*font-size: 36pt;*/
   color: purple;
+
 }
 
 p + p + p{
-  font-size: 36px;
+  font-size: 15px;
   color: purple;
+
 }
 
 body p:first-letter{
@@ -93,7 +95,7 @@ img{
 }
 div.nextDiv {
   width: 600px;
-  border: 1px solid;
+  /*border: 1px solid;*/
 
   /*margin: 0 0 0 0 ;*/
   /*padding-top: 1px;*/
@@ -108,8 +110,8 @@ div.nextDiv p  {
   /*margin-bottom: 25%;*/
    margin-left:  auto;
    margin-right: auto;
-   margin-top: 15%;
-   margin-bottom: 15%;
+   /*margin-top: 15%;*/
+   /*margin-bottom: 15%;*/
    width: 400px;
    height: 50%;
    /*border: 1px solid;*/
@@ -124,37 +126,49 @@ div.nextDiv p  {
 div.nextDiv #secP{
   background-color: maroon;
  /*color: white;*/
+ float: left;
   text-decoration: underline;
 }
 
+div.nextDiv #secP + p{
+ background-color: green;
+}
+ 
  
 #verticalAlign p{
-  font-size: 26px;
+  font-size: 25px;
   padding-bottom: 20px;
   padding-top: 20px;
+  /*clear: right;*/
   /*text-decoration: underline;*/
   /*text-shadow: gold 2px 2px 9px;*/
 
 }
 #verticalAlign img {
   float:  left;
-  display: block;
-   border: 15px gold  red;
+   height: 200px;
+  width: auto;
+  /*display: block;*/
+   /*border: 15px gold solid;*/
 }
-#verticalAlign img +img{
+#verticalAlign img + img{
   float: right;
+
  border: 15px gold  solid;
 }
 
 
-#verticalAlign img +img +img{
+#verticalAlign img +img +span +img{
   float: left;
- border: 15px gold  solid;
+  /*margin-right: -600px;*/
+  /*margin-top: -250px;*/
+    margin-right: -50px;
+ border: 15px red  solid;
 }
 
 #verticalAlign img +img +img +img{
-  float: right;
- border: 15px gold  solid;
+  float: left;
+ border: 15px purple solid;
 }
 
 p img{
@@ -164,18 +178,19 @@ p img{
   line-height: 1em;
   border: 1px dotted;
   /*margin: 20px;*/
-  text-decoration: underline;
+ 
  
   border: 5px silver ;
   border-style: groove;
   /*border-style: ridge inset dotted dashed;*/
 }
 span{
+    clear:right;
   /*vertical-align: bottom;*/
-  border: 1px dashed black;
+  border: 5px groove yellow;
   width: 100px;
   /*margin-left: 50px;*/
-  text-align: justify;
+  /*text-align: justify;*/
   background-color: rgb(20%,20%,20%);
   color: white;
   line-height: 2em;
@@ -296,9 +311,11 @@ a{
 </div>
 <div class = "nextDiv"> 
 <p  >you are <em>not</em> prepared Ash to Ash give me a paragraph,    how do i     go to the second line?Ash to Ash give me a paragraph,    how do i     go to the second line?</p>
-</div>
-<div class = "nextDiv">
+ 
 <p  id = "secP">you are <em>not</em> prepared Ash to Ash give me a paragraph,    how do i     go to the second line?Ash to Ash give me a paragraph,    how do i     go to the second line?</p>
+
+<p   >you are <em>not</em> prepared Ash to Ash give me a paragraph,    how do i     go to the second line?Ash to Ash give me a paragraph,    how do i     go to the second line?</p>
+
  
 </div>
 <ul>
@@ -321,14 +338,14 @@ do i go to the second line?</p>
 <li>4</li>
 </ol>
 <div id = "verticalAlign">
-     <p>let<img  src = "../pic/portrait3.jpg"></img> meWelcome to our Havoc Demon Hunter DPS guide for World of Warcraft Legion 7.0.3. Here, you will learn everything you need to know about playing a Havoc Demon Hunter in a raid environment and in Mythic+ dungeons.
+     <img  src = "../pic/portrait3.jpg"></img> <p>letmeWelcome to our Havoc Demon Hunter DPS guide for World of Warcraft Legion 7.0.3. Here, you will learn everything you need to know about playing a Havoc Demon Hunter in a raid environment and in Mythic+ dungeons.
 
 About Our Author
 
 This guide has been written by Wordup, a frequent theorycrafter involved in a number of class communities. He is also an experienced <img  src = "../pic/portrait2.jpg"></img>player who has been in the world top 100 since the days of Sunwell, currently raiding in Echoes. You can also follow him on Twitter.
 
 1. Class Overview
-Havoc, the DPS spec of the newly introduced Demon Hunter class in Legion is a resource based melee specialization with a focus on Global Cooldown locked gameplay <img  src = "../pic/portrait4.jpg"></img>with a builder spender style. It's balanced around your ability to make the most out of your Fury pool and reacting to unpredictable gains whilst using situation specific abilities to push it further. On top of that, it has a number of mobility tools turning it into versatile spec with multiple ways of capitalizing on them.
+Havoc, the DPS spec of the newly introduced Demon Hunter class in Legion is a resource <span>based melee specialization with a focus on Global</span> Cooldown locked gameplay <img  src = "../pic/portrait4.jpg"></img>with a builder spender style. It's balanced around your ability to make the most out of your Fury pool and reacting to unpredictable gains whilst using situation specific abilities to push it further. On top of that, it has a number of mobility tools turning it into versatile spec with multiple ways of capitalizing on them.
 
  hello demon ho<img  src = "../pic/portrait1.jpg">w you doing  the </img>vertical-align
  ury is the primary resource, fueling offensive spenders such as Chaos Strike Icon Chaos Strike and Blade Dance Icon Blade Dance, and generated by Demon's Bite Icon Demon's Bite.
