@@ -26,7 +26,13 @@ p:first-letter{
   color:green;
   font-size: 200%;
 }
+p:before{
+  counter-reset: ordered 4;
+  counter-increment: ordered ;
+  content: counters(ordered, ".") "-";
+}
 p{
+
   width: 800;
   margin-left: 50px;
   text-indent: 1em;
